@@ -60,7 +60,7 @@ func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath i
 
     var slider = PhotoSlider.ViewController(imageURLs: self.images)
     slider.currentPage = indexPath.row
-    photoSlider.transitioningDelegate = self
+    slider.transitioningDelegate = self
     self.presentViewController(slider, animated: true, completion: nil)
 
 }
